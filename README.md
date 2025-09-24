@@ -1,6 +1,31 @@
 # Overview of the I2CAR framework
 <img width="1115" height="351" alt="_cgi-bin_mmwebwx-bin_webwxgetmsgimg__ MsgID=1525722861549640544 skey=@crypt_576c8fe3_00332332b6a3f1de86231dab982da62c mmweb_appid=wx_webfilehelper" src="https://github.com/user-attachments/assets/68c5b31d-08b8-4f81-a39a-0ff74e12eaee" />
 
+# I²CAR: Intra- and Inter-Variate Consistency Contrastive Adversarial Representation Learning
+I²CAR is a lightweight framework for multivariate time series anomaly detection, addressing spatiotemporal entanglement and noise robustness. 
+It decouples temporal and variable dependencies, then leverages contrastive–adversarial representation learning to 
+separate noise from anomalies and enhance detection accuracy
+
+## 🔹 Overall
+I²CAR is a lightweight framework for **multivariate time series anomaly detection**, addressing spatiotemporal entanglement and noise contamination.  
+It decouples **temporal** and **variable** dependencies, and introduces a dual strategy to achieve robust detection.
+
+## 🔹 Architecture
+- **Temporal-view GNN** models channel-independent temporal consistency.  
+- **Variable-view GNN** models inter-variable consistency.  
+- **Cross-view alignment** highlights anomalies as disruptions between the two views.  
+
+## 🔹 Optimization
+- **Contrastive learning** enlarges the boundary between noise and anomalies within each view.  
+- **Adversarial learning** further generalizes normal and noisy samples, strengthening robustness to noise.  
+- The joint loss balances intra-view separation and inter-view alignment for stable optimization.
+
+## 🔹 Performance & Justification
+- Achieves **state-of-the-art F1 scores** across four benchmark datasets (MSL, SMAP, PSM, SWaT).  
+- Demonstrates the **lowest F1 drop (F1-N)** under noisy conditions, proving strong noise robustness.  
+- Maintains **lightweight complexity** with fewer parameters and FLOPs, suitable for edge deployment.  
+
+
 
 ## Code Description
 There are ten files/folders in the source.
@@ -15,8 +40,7 @@ There are ten files/folders in the source.
 
 ## Get Start
 1. Install Python 3.6, PyTorch >= 1.4.0.
-2. Download data. You can obtain all benchmarks from [Google Cloud](https://drive.google.com/drive/folders/1RaIJQ8esoWuhyphhmMaH-VCDh-WIluRR?usp=sharing). All the datasets are well pre-processed.
-3. Train and evaluate. We provide the experiment scripts of all benchmarks under the folder ```./scripts```. You can reproduce the experiment results as follows:
+2. Train and evaluate. We provide the experiment scripts of all benchmarks under the folder ```./scripts```. You can reproduce the experiment results as follows:
 
 ```bash
 bash ./scripts/MSL.sh
