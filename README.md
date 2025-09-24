@@ -3,8 +3,7 @@
 
 # I²CAR: Intra- and Inter-Variate Consistency Contrastive Adversarial Representation Learning
 I²CAR is a lightweight framework for multivariate time series anomaly detection, addressing spatiotemporal entanglement and noise robustness. 
-It decouples temporal and variable dependencies, then leverages contrastive–adversarial representation learning to 
-separate noise from anomalies and enhance detection accuracy
+It decouples temporal and variable dependencies, then leverages contrastive–adversarial representation learning to separate noise from anomalies and enhance detection accuracy
 
 ## 🔹 Overall
 I²CAR is a lightweight framework for **multivariate time series anomaly detection**, addressing spatiotemporal entanglement and noise contamination.  
