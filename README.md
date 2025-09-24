@@ -19,7 +19,6 @@ There are ten files/folders in the source.
 3. Train and evaluate. We provide the experiment scripts of all benchmarks under the folder ```./scripts```. You can reproduce the experiment results as follows:
 
 ```bash
-bash ./scripts/SMD.sh
 bash ./scripts/MSL.sh
 bash ./scripts/SMAP.sh
 bash ./scripts/PSM.sh
@@ -29,7 +28,5 @@ bash ./scripts/SWAT.sh
 We appreciate the following github repos a lot for their valuable code:
 
 https://github.com/thuml/Anomaly-Transformer
-
 https://github.com/ahstat/affiliation-metrics-py
-
 https://github.com/DAMO-DI-ML/KDD2023-DCdetector
