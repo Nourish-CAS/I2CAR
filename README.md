@@ -4,11 +4,11 @@
 I²CAR is a lightweight framework for multivariate time series anomaly detection, addressing spatiotemporal entanglement and noise robustness. 
 It decouples temporal and variable dependencies, then leverages contrastive–adversarial representation learning to separate noise from anomalies and enhance detection accuracy
 
-## 🔹 Overall
+## 🌟 Overall
 I²CAR is a lightweight framework for **multivariate time series anomaly detection**, addressing spatiotemporal entanglement and noise contamination.  
 It decouples **temporal** and **variable** dependencies, and introduces a dual strategy to achieve robust detection.
 
-## 🔹 Architecture
+## 🛠 Architecture
 - **Temporal-view GNN** models channel-independent temporal consistency.  
 - **Variable-view GNN** models inter-variable consistency.  
 - **Cross-view alignment** highlights anomalies as disruptions between the two views.  
@@ -18,14 +18,14 @@ It decouples **temporal** and **variable** dependencies, and introduces a dual s
 - **Adversarial learning** further generalizes normal and noisy samples, strengthening robustness to noise.  
 - The joint loss balances intra-view separation and inter-view alignment for stable optimization.
 
-## 🔹 Performance & Justification
+## 📊 Performance & Justification
 - Achieves **state-of-the-art F1 scores** across four benchmark datasets (MSL, SMAP, PSM, SWaT).  
 - Demonstrates the **lowest F1 drop (F1-N)** under noisy conditions, proving strong noise robustness.  
 - Maintains **lightweight complexity** with fewer parameters and FLOPs, suitable for edge deployment.  
 
 
 
-## Code Description
+## 🛠 Code Description
 There are ten files/folders in the source.
 
 - data_factory: The preprocessing folder/file. All datasets preprocessing codes are here.
@@ -36,7 +36,7 @@ There are ten files/folders in the source.
 - utils: Other functions for data processing and model building.
 
 
-## Get Start
+## 💻 Get Start
 1. Install Python 3.6, PyTorch >= 1.4.0.
 2. Train and evaluate. We provide the experiment scripts of all benchmarks under the folder ```./scripts```. You can reproduce the experiment results as follows:
 
@@ -46,7 +46,8 @@ bash ./scripts/SMAP.sh
 bash ./scripts/PSM.sh
 bash ./scripts/SWAT.sh
 
-## Acknowledgement
+
+## 🙏 Acknowledgement
 We appreciate the following github repos a lot for their valuable code:
 
 https://github.com/thuml/Anomaly-Transformer
